@@ -23,6 +23,13 @@ export default class Calculator {
     return result;
   }
 
+  public static multiplication(a: number, b: number = Calculator.memorizedNumber) {
+    const result = this.normalize(a * b);
+
+    this.memorizedNumber = result;
+    return result;
+  }
+
   private static normalize(n: number) {
     return parseFloat(n.toPrecision(12));
   }
