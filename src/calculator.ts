@@ -16,21 +16,21 @@ export default class Calculator {
     return result;
   }
   
-  public static subtraction(a: number, b: number = Calculator.memorizedNumber) {
+  public static subtract(a: number, b: number = Calculator.memorizedNumber) {
     const result = this.normalize(b - a);
 
     this.memorizedNumber = result;
     return result;
   }
 
-  public static multiplication(a: number, b: number = Calculator.memorizedNumber) {
+  public static multiply(a: number, b: number = Calculator.memorizedNumber) {
     const result = this.normalize(a * b);
 
     this.memorizedNumber = result;
     return result;
   }
 
-  public static division(a:number, b: number = Calculator.memorizedNumber) {
+  public static divide(a:number, b: number = Calculator.memorizedNumber) {
     const result = this.normalize(b / a);
 
     this.memorizedNumber = result;
