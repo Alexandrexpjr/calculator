@@ -1,6 +1,6 @@
 import Calculator from "../calculator";
 
-describe('Verifica o comportamento do método "sum()"', () => {
+describe('Verifica o comportamento do método "sum"', () => {
   it('Quando são passados 5 e 10 como parâmetros', () => {
     expect(Calculator.sum(5, 10)).toBe(15);
     expect(Calculator.memorizedNumber).toBe(15);

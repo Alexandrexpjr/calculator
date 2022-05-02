@@ -1,6 +1,6 @@
 import Calculator from "../calculator";
 
-describe('Verifica o comportamento do método "subtraction()"', () => {
+describe('Verifica o comportamento do método "subtraction"', () => {
   it('Quando são passados 5 e 10 como parâmetros', () => {
     expect(Calculator.subtraction(5, 10)).toBe(5);
     expect(Calculator.memorizedNumber).toBe(5);
