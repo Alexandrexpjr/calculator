@@ -30,6 +30,13 @@ export default class Calculator {
     return result;
   }
 
+  public static division(a:number, b: number = Calculator.memorizedNumber) {
+    const result = this.normalize(b / a);
+
+    this.memorizedNumber = result;
+    return result;
+  }
+
   private static normalize(n: number) {
     return parseFloat(n.toPrecision(12));
   }
