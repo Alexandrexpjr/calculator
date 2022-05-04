@@ -1,4 +1,4 @@
-import Calculator from "../calculator";
+import Calculator from "../class/calculator";
 
 describe('Verifica o comportamento do método "multiply"', () => {
   it('Quando são passados 3 e 5 como parâmetros', () => {

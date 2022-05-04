@@ -40,4 +40,11 @@ export default class Calculator {
   private static normalize(n: number) {
     return parseFloat(n.toPrecision(12));
   }
+
+  public static pow(a:number, b: number = Calculator.memorizedNumber) {
+    const result = this.normalize(b ** a);
+
+    this.memorizedNumber = result;
+    return result;
+  }
 }

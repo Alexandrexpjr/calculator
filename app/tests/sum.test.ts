@@ -1,4 +1,4 @@
-import Calculator from "../calculator";
+import Calculator from "../class/calculator";
 
 describe('Verifica o comportamento do método "sum"', () => {
   it('Quando são passados 5 e 10 como parâmetros', () => {
